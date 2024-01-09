@@ -37,7 +37,7 @@ st.markdown(
 )
 
 
-st.title("مرحبا بك في عالم النباتات نساعدك لمعرفك الآفات الزراعية على محصول البرتقال ")
+st.title("مرحبا بك في عالم النباتات نساعدك لمعرفك الآفات الزراعية على محصول الكمثرى (الاجاص) ")
 # image = Image.open("images (7).jpg")
 # resized_image = image.resize((500, 300))
 # st.image(resized_image, caption='Resized Image')
@@ -48,31 +48,29 @@ import streamlit as st
 from PIL import Image
 
 # Load and resize the first image
-image1 = Image.open("images (7).jpg")
+image1 = Image.open("2017_10_6_11_18_26_56.jpg")
 resized_image1 = image1.resize((500, 300))
 
 # Load and resize the second image
-image2 = Image.open("OrangeVariousBenefits2.jpg")
+image2 = Image.open("h3.jpg")
 resized_image2 = image2.resize((500, 300))
 
 # Create a two-column layout
 col1, col2 = st.columns(2)
 
 # Display the resized image in the first column
-col1.image(resized_image1, caption='  ورقة البرتقال')
+col1.image(resized_image1, caption='  ورقة الكمثرى (الاجاص)')
 
 # Display the resized second image in the second column
-col2.image(resized_image2, caption='ثمرة البرتقال')
+col2.image(resized_image2, caption='ثمرة الكمثرى (الاجاص)')
 
 
 
 class_names = [
-    'Black spot',
-    'canker',
-    'Greening',
-    'Melanose',
+    'spot',
+    'slug',
+    'Curl',
 ]
-
 
 
 # from st_pages import Page, Section, show_pages, add_page_title
@@ -105,8 +103,8 @@ def main():
     # st.title("Image Classification")
     # st.subheader("Identifying plant diseases using artificial intelligence")
 
-    st.subheader("رفع صورة ورقة البرتقال لتحديد المرض")
-    st.subheader("مرحبًا! هل لديك شكوك حول حالة ورقة البرتقال؟ انقر على الزر أدناه لرفع صورة ورقة البرتقال، وسنستخدم التكنولوجيا الحديثة والذكاء الاصطناعي لتحليل الصورة وتقديم تشخيص دقيق لأي مشكلة قد تكون موجودة.")
+    st.subheader("رفع صورة ورقة الكمثرى (الاجاص) لتحديد المرض")
+    st.subheader("مرحبًا! هل لديك شكوك حول حالة ورقة الكمثرى (الاجاص)؟ انقر على الزر أدناه لرفع صورة ورقة الكمثرى (الاجاص)، وسنستخدم التكنولوجيا الحديثة والذكاء الاصطناعي لتحليل الصورة وتقديم تشخيص دقيق لأي مشكلة قد تكون موجودة.")
     st.text("كيفية الاستفادة:")
     st.text("1. انقر على الزر رفع صورة")
     st.text("2. حدد ورقة التفاح بوضوح في الصورة.")
